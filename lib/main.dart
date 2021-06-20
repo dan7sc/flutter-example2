@@ -31,30 +31,43 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        mainAxisSize: MainAxisSize.max,
-        children: <Widget>[],
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: Row(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: Stack(
         children: [
-          Container(
-            height: 40.0,
-            width: 80.0,
-            color: Colors.red,
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              height: 40.0,
+              width: 80.0,
+              color: Colors.green,
+            ),
           ),
-          Container(
-            height: 40.0,
-            width: 80.0,
-            color: Colors.blue,
+          Positioned(
+            left: 200,
+            child: Container(
+              height: 40.0,
+              width: 80.0,
+              color: Colors.yellow,
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 40.0,
+              width: 80.0,
+              color: Colors.blue,
+            ),
+          ),
+          Positioned(
+            left: 0,
+            child: Container(
+              height: 40.0,
+              width: 80.0,
+              color: Colors.red,
+            ),
           ),
         ],
       ),
