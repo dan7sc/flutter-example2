@@ -36,10 +36,24 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
+            Row(
+              children: [
+                Container(
+                  height: 40.0,
+                  width: 40.0,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 40.0,
+                  width: 40.0,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
             Text(
               'You have pushed the button this many times:',
             ),
