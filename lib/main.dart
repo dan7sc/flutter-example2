@@ -36,47 +36,26 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             Row(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   height: 40.0,
-                  width: 40.0,
+                  width: 80.0,
                   color: Colors.red,
                 ),
                 Container(
                   height: 40.0,
-                  width: 40.0,
+                  width: 80.0,
                   color: Colors.blue,
                 ),
               ],
             ),
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              'hello',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              'hello',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              'hello',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Text(
-              'hello',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            Expanded(child: Container(
-                width: 200.0,
-                height: 40.0,
-                color: Colors.red,),),
           ],
         ),
       ),
