@@ -37,6 +37,29 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
+          Column(
+            children: [
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+              Text("String for testing"),
+            ],
+          ),
           Align(
             alignment: Alignment.bottomLeft,
             child: Container(
