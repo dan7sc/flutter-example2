@@ -43,6 +43,26 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
+            Text(
+              'hello',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              'hello',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              'hello',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Text(
+              'hello',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            Expanded(child: Container(
+                width: 200.0,
+                height: 40.0,
+                color: Colors.red,),),
           ],
         ),
       ),
