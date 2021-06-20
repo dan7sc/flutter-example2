@@ -37,58 +37,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Stack(
         children: [
-          Column(
-            children: [
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-              Text("String for testing"),
-            ],
-          ),
           Align(
-            alignment: Alignment.bottomLeft,
+            alignment: Alignment.center,
             child: Container(
-              height: 40.0,
-              width: 80.0,
-              color: Colors.green,
-            ),
-          ),
-          Positioned(
-            left: 200,
-            child: Container(
-              height: 40.0,
-              width: 80.0,
-              color: Colors.yellow,
-            ),
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              height: 40.0,
-              width: 80.0,
-              color: Colors.blue,
-            ),
-          ),
-          Positioned(
-            left: 0,
-            child: Container(
-              height: 40.0,
-              width: 80.0,
+              height: 200,
+              width: MediaQuery.of(context).size.width,
               color: Colors.red,
             ),
           ),
