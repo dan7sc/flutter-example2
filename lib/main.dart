@@ -31,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text(widget.title),
       ),
@@ -42,7 +42,18 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               height: 200,
               width: MediaQuery.of(context).size.width,
-              color: Colors.red,
+              color: Colors.white,
+            ),
+          ),
+          Align(
+            alignment: Alignment.center,
+            child: Container(
+              height: 90,
+              width: 90,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.red,
+              ),
             ),
           ),
         ],
