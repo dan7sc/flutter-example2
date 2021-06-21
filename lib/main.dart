@@ -35,28 +35,41 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Stack(
-        children: [
-          Align(
-            alignment: Alignment.center,
-            child: Container(
-              height: 200,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              height: 100,
               width: MediaQuery.of(context).size.width,
               color: Colors.white,
             ),
-          ),
-          Align(
-            alignment: Alignment.center,
-            child: Container(
-              height: 90,
-              width: 90,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.red,
+            Container(
+              child: Stack(
+                children: [
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      height: 200,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.white,
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      height: 90,
+                      width: 90,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.red,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
