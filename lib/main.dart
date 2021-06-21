@@ -62,10 +62,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            width: 16.0,
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16.0),
+                            child: Text("Daniel"),
                           ),
-                          Text("Daniel"),
                           Icon(Icons.phone),
                         ],
                       ),
