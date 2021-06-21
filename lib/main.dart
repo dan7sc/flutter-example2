@@ -35,64 +35,29 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SingleChildScrollView(
-        child: Column(
+      body: Column(
           children: [
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.red,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.black,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.green,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.blue,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.yellow,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.white,
-            ),
-            Container(
-              height: 100,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.purple,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: List.generate(
-                  50,
-                  (index) => Container(
-                    width: 50.0,
-                    height: 50.0,
-                    color: index % 2 == 0 ? Colors.black : Colors.red,
-                  ),
-                ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                        Text("Daniel"),
+                      ],
+                    ),
+                ],
               ),
-            )
-          ],
-        ),
+            ),
+          ),
+        ],
       ),
     );
   }
