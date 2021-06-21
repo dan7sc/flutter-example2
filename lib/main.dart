@@ -35,8 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: SingleChildScrollView(
-        child: Column(
+      body: Column(
           children: [
             Container(
               height: 100,
@@ -79,7 +78,6 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.red,
             ),
           ],
-        ),
       ),
     );
   }
