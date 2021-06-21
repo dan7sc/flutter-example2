@@ -27,7 +27,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
+      body: ListView(
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -91,22 +90,31 @@ class _MyHomePageState extends State<MyHomePage> {
                     SizedBox(
                       height: 16.0,
                     ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 16.0,
-                        ),
-                        Text(
-                          "Telefone : ",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 16.0,
+                        bottom: 8.0,
+                      ),
+                      child: Row(
+                        children: [
+                          SizedBox(
+                            width: 16.0,
                           ),
-                        ),
-                        Text("+55 (55) 55555-5555",
+                          Text(
+                            "Telefone : ",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16.0,
+                            ),
+                          ),
+                          Text(
+                            "+55 (55) 55555-5555",
                             style: TextStyle(
                               fontSize: 16.0,
-                            )),
-                      ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
