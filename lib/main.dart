@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(
@@ -67,7 +67,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             padding: const EdgeInsets.only(right: 16.0),
                             child: Text("Daniel"),
                           ),
-                          Icon(Icons.phone),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Icon(Icons.phone),
+                          ),
                         ],
                       ),
                     ],
