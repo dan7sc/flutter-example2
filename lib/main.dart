@@ -76,15 +76,18 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               height: 100,
               width: MediaQuery.of(context).size.width,
-              color: Colors.red,
+              color: Colors.purple,
             ),
-            Row(
-              children: List.generate(
-                50,
-                (index) => Container(
-                  width: 50.0,
-                  height: 50.0,
-                  color: index % 2 == 0 ? Colors.black : Colors.red,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(
+                  50,
+                  (index) => Container(
+                    width: 50.0,
+                    height: 50.0,
+                    color: index % 2 == 0 ? Colors.black : Colors.red,
+                  ),
                 ),
               ),
             )
