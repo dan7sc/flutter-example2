@@ -42,11 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Card(
               child: Container(
                 height: 150.0,
+                width: 400.0,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
                       Row(
+                        mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
@@ -67,11 +69,15 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(right: 16.0),
-                                child: Text(
-                                  "Daniel",
-                                  style: TextStyle(
-                                    fontSize: 24.0,
-                                  )
+                                child: Container(
+                                  // width: 200,
+                                  child: Text(
+                                    "Daniel",
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                      fontSize: 24.0,
+                                    )
+                                  ),
                                 ),
                               ),
                             ],
