@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Container(
               height: 100,
-              width: MediaQuery.of(context).size.width * 0.25,
+              width: MediaQuery.of(context).size.width,
               color: Colors.blue,
             ),
             Container(
@@ -78,6 +78,16 @@ class _MyHomePageState extends State<MyHomePage> {
               width: MediaQuery.of(context).size.width,
               color: Colors.red,
             ),
+            Row(
+              children: List.generate(
+                50,
+                (index) => Container(
+                  width: 50.0,
+                  height: 50.0,
+                  color: index % 2 == 0 ? Colors.black : Colors.red,
+                ),
+              ),
+            )
           ],
         ),
       ),
