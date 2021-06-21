@@ -36,15 +36,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              color: Colors.yellow,
+              child: Container(
+                height: 150.0,
                 child: Column(
                   children: [
                     Row(
                       children: [
                         Container(
+                          width: 30.0,
+                          height: 30.0,
                           decoration: BoxDecoration(
                             color: Colors.grey,
                             shape: BoxShape.circle,
@@ -53,7 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         Text("Daniel"),
                       ],
                     ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
