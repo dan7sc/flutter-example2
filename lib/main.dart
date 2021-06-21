@@ -41,32 +41,42 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               height: 100,
               width: MediaQuery.of(context).size.width,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.red,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.black,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.green,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.yellow,
+            ),
+            Container(
+              height: 100,
+              width: MediaQuery.of(context).size.width,
               color: Colors.white,
             ),
             Container(
-              child: Stack(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      height: 200,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Align(
-                    alignment: Alignment.center,
-                    child: Container(
-                      height: 90,
-                      width: 90,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.red,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+              height: 100,
+              width: MediaQuery.of(context).size.width,
+              color: Colors.red,
             ),
           ],
         ),
