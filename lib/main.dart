@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 24.0,
+                              horizontal: 16.0,
                               vertical: 8.0,
                             ),
                             child: Container(
@@ -63,9 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(
-                            width: 16,
+                            width: 16.0,
                           ),
                           Text("Daniel"),
+                          Icon(Icons.phone),
                         ],
                       ),
                     ],
