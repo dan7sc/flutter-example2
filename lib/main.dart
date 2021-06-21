@@ -40,25 +40,30 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Card(
-              color: Colors.yellow,
               child: Container(
                 height: 150.0,
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 30.0,
-                          height: 30.0,
-                          decoration: BoxDecoration(
-                            color: Colors.grey,
-                            shape: BoxShape.circle,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            width: 45.0,
+                            height: 45.0,
+                            decoration: BoxDecoration(
+                              color: Colors.grey,
+                              shape: BoxShape.circle,
+                            ),
                           ),
-                        ),
-                        Text("Daniel"),
-                      ],
-                    ),
-                  ],
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Text("Daniel"),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
