@@ -48,12 +48,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Row(
                         children: [
-                          Container(
-                            width: 45.0,
-                            height: 45.0,
-                            decoration: BoxDecoration(
-                              color: Colors.grey,
-                              shape: BoxShape.circle,
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 24.0,
+                              vertical: 8.0,
+                            ),
+                            child: Container(
+                              width: 45.0,
+                              height: 45.0,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                shape: BoxShape.circle,
+                              ),
                             ),
                           ),
                           SizedBox(
