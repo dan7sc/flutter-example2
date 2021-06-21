@@ -47,28 +47,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16.0,
-                              vertical: 8.0,
-                            ),
-                            child: Container(
-                              width: 45.0,
-                              height: 45.0,
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                shape: BoxShape.circle,
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 16.0,
+                                  vertical: 8.0,
+                                ),
+                                child: Container(
+                                  width: 45.0,
+                                  height: 45.0,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
                               ),
-                            ),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 16.0),
+                                child: Text("Daniel"),
+                              ),
+                            ],
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 16.0),
-                            child: Text("Daniel"),
-                          ),
-                          Align(
-                            alignment: Alignment.centerRight,
+                            padding: const EdgeInsets.all(8.0),
                             child: Icon(Icons.phone),
                           ),
                         ],
