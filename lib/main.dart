@@ -67,7 +67,12 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                               Padding(
                                 padding: const EdgeInsets.only(right: 16.0),
-                                child: Text("Daniel"),
+                                child: Text(
+                                  "Daniel",
+                                  style: TextStyle(
+                                    fontSize: 24.0,
+                                  )
+                                ),
                               ),
                             ],
                           ),
